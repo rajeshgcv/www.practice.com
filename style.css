@@ -1,4 +1,4 @@
-h1{
+/* h1{
     background-color: chocolate;
 }
 h2{
@@ -9,4 +9,33 @@ h3{
     color: red;
     text-shadow: 2px 2px 7px black;
     font-size: 20px;
+} */
+h1{
+    font-family: 'Ink Free';
+    color: deeppink;
+    text-shadow: 4px 3px 7px blue;
+    text-align: center;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-image: url('/Images/cosmos-flowers.avif');
+    /* background-image: url('/Images/panda.png'); */
+    animation-name: flower;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 4s;
+    position: relative;
+    background-size: cover;
+    box-shadow: 3px 2px 7px black;
+}
+@keyframes flower{
+    0%{left:200px; top: 0px;}
+    25%{background-image: url('/Images/purpleflower.jpg'); left: 400px; top: 300px;}
+    50%{background-image: url('/Images/flower.jpg'); left: 600px; top: 0px;}
+    75%{background-image: url('/Images/whiteflower.jpg'); left: 800px; top: 300px;}
+    100%{background-image: url('/Images/cosmos-flowers.avif'); left: 1000px; top: 0px;}
+    
+
 }
